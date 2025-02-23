@@ -92,7 +92,7 @@
     {
       "id": 7,
       "name": "Smartphone 3",
-      "description": "eature-rich smartwatch with health tracking 222",
+      "description": "Feature-rich smartwatch with health tracking 222",
       "price": 10,
       "stock": 10,
       "salesCategory": "headphone",
@@ -112,12 +112,57 @@
     },
     {
       "id": 9,
-      "name": "test ",
-      "description": "grew",
+      "name": "smart",
+      "description": "demo demo",
       "price": 10,
       "stock": 110,
       "sales": 20,
+      "salesCategory": []
+    },
+    {
+      "id": 10,
+      "name": "ew",
+      "description": "fewfe",
+      "price": 110,
+      "stock": 2323,
+      "sales": 3230,
+      "salesCategory": "headphone"
+    },
+    {
+      "id": 11,
+      "name": "tydfjhgvb",
+      "description": "rwgwr",
+      "price": 230,
+      "stock": 23,
+      "sales": 3420,
+      "salesCategory": "smartphone"
+    },
+    {
+      "id": 12,
+      "name": "fwrf",
+      "description": "gwg",
+      "price": 10,
+      "stock": 10,
+      "sales": 10,
+      "salesCategory": "laptop"
+    },
+    {
+      "id": 13,
+      "name": "test 12",
+      "description": "test test",
+      "price": 10,
+      "stock": 330,
+      "sales": 10,
       "salesCategory": "tablet"
+    },
+    {
+      "id": 14,
+      "name": "ewfef",
+      "description": "wefwe",
+      "price": 10,
+      "stock": 10,
+      "sales": 0,
+      "salesCategory": []
     }
   ]
 }
