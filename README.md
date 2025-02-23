@@ -65,30 +65,30 @@ The API will be available at http://localhost:3000
     - Response: 204 No Content if deletion is successful or a 404 error if not found.
 
 - **GET:** /api/chart-data
-    - Description: Retrieve aggregated chart data for product sales.
-    - Response: JSON object structured as follows:
-        `
-        {
-            "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-            "salesByCategory": {
-                "laptop": [totalSalesForEachMonth],
-                "smartphone": [totalSalesForEachMonth],
-                "Unknown Category": [totalSalesForEachMonth]
-            }
-        }
-        `
-    - The endpoint aggregates the sales array from all products by their salesCategory
+- Description: Retrieve aggregated chart data for product sales.
+- Response: JSON object structured as follows:
+`
+{
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    "salesByCategory": {
+        "laptop": [totalSalesForEachMonth],
+        "smartphone": [totalSalesForEachMonth],
+        "Unknown Category": [totalSalesForEachMonth]
+    }
+}
+`
+- The endpoint aggregates the sales array from all products by their salesCategory
 
 ## File Structure
-    - index.js: Main server file containing API routes and server configuration.
-    - products.json: File used to store products data.
-    - package.json: Project metadata and dependencies.
+- index.js: Main server file containing API routes and server configuration.
+- products.json: File used to store products data.
+- package.json: Project metadata and dependencies.
 
 ## Customization
-    - Storage: This API uses a JSON file for simplicity. For production applications, consider using a database like MongoDB, PostgreSQL, etc.
-    - Sales Aggregation: Modify the /api/chart-data endpoint if your chart data requirements change.
+- Storage: This API uses a JSON file for simplicity. For production applications, consider using a database like MongoDB, PostgreSQL, etc.
+- Sales Aggregation: Modify the /api/chart-data endpoint if your chart data requirements change.
 
 ## Contact
- -  Tannu Priya, tannubhamra@gmail.com
+-  Tannu Priya, tannubhamra@gmail.com
 
 
