@@ -36,9 +36,9 @@ This is a Node.js/Express API for a simple shop application. The API manages a c
 The API will be available at http://localhost:3000
 
 ## API Endpoints
-    - GET /api/products
-    - Description: Retrieve a list of all products.
-    - Response: JSON array of product objects.
+- GET /api/products
+- Description: Retrieve a list of all products.
+- Response: JSON array of product objects.
 
 - **GET:**: /api/product/:id
     - Description: Retrieve a single product by its ID.
