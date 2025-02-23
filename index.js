@@ -110,9 +110,7 @@ app.get("/api/chart-data", (req, res) => {
             (value, index) => value + (productSales[index] || 0)
         );
     });
-
     res.json(chartData);
-
   });
 
 // start the server
