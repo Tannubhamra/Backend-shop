@@ -19,9 +19,9 @@ This is a Node.js/Express API for a simple shop application. The API manages a c
 
 ## Installation
 
-   1. Clone this repository:
+-  Clone this repository:
    ```bash
-   git clone https://github.com/Tannubhamra/Backend-shop.git
+- git clone https://github.com/Tannubhamra/Backend-shop.git
 
 ##  Navigate to the project directory
 - cd Backend-shop
@@ -36,15 +36,15 @@ This is a Node.js/Express API for a simple shop application. The API manages a c
 The API will be available at http://localhost:3000
 
 ## API Endpoints
-- GET /api/products
+    - GET /api/products
     - Description: Retrieve a list of all products.
     - Response: JSON array of product objects.
 
-- GET /api/product/:id
+- **GET:**: /api/product/:id
     - Description: Retrieve a single product by its ID.
     - Response: JSON object of the product or a 404 error if not found.
 
-- POST /api/product
+- **POST:** /api/product
     - Description: Create a new product.
     - Request Body: JSON object containing
         - name (String)
@@ -55,26 +55,28 @@ The API will be available at http://localhost:3000
         - salesCategory (String)
     - Response: JSON object of the newly created product with a 201 status code.
 
-- PUT /api/product/:id
+- **PUT:** /api/product/:id
    - Description: Update an existing product.
    - Request Body: JSON object with the updated values.
    - Response: JSON object of the updated product or a 404 error if not found.
 
-- DELETE /api/product/:id
+- **DELETE:** /api/product/:id
     - Description: Delete a product by its ID.
     - Response: 204 No Content if deletion is successful or a 404 error if not found.
 
-- GET /api/chart-data
+- **GET:** /api/chart-data
     - Description: Retrieve aggregated chart data for product sales.
     - Response: JSON object structured as follows:
+        `
         {
-        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-        "salesByCategory": {
-            "laptop": [totalSalesForEachMonth],
-            "smartphone": [totalSalesForEachMonth],
-            "Unknown Category": [totalSalesForEachMonth]
+            "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            "salesByCategory": {
+                "laptop": [totalSalesForEachMonth],
+                "smartphone": [totalSalesForEachMonth],
+                "Unknown Category": [totalSalesForEachMonth]
+            }
         }
-        }
+        `
     - The endpoint aggregates the sales array from all products by their salesCategory
 
 ## File Structure
@@ -85,4 +87,8 @@ The API will be available at http://localhost:3000
 ## Customization
     - Storage: This API uses a JSON file for simplicity. For production applications, consider using a database like MongoDB, PostgreSQL, etc.
     - Sales Aggregation: Modify the /api/chart-data endpoint if your chart data requirements change.
+
+## Contact
+ -  Tannu Priya, tannubhamra@gmail.com
+
 
