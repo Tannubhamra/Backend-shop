@@ -48,14 +48,15 @@ function saveProducts(products) {
 
 app.post('/api/product', (req, res) => {
     const products = loadProducts().products;
-    const { name, description, price,  stock, sales } = req.body;
+    const { name, description, price,  stock, sales, salesCategory } = req.body;
     const newProduct = {
         id: products.length + 1,
         name,
         description,
         price,
         stock,
-        sales
+        sales,
+        salesCategory
     };
     products.push(newProduct);
     saveProducts(products); 
@@ -66,14 +67,17 @@ app.put('/api/product/:id', (req, res) => {
     const products = loadProducts().products;
     const product = products.find((p) => p.id === parseInt(req.params.id));
     if(!product) return res.status(404).json({ message: 'Product not found!'});
-    const { name, description, price, stock, sales } = req.body;
+    const { name, description, price, stock, sales, salesCategory} = req.body;
 
     product.name = name ||  product.name;
     product.description =  description || product.description;
     product.price = price || product.price;
     product.stock = stock || product.stock;
-    if (Array.isArray(sales)) {
-        product.sales = sales;
+    product.sales = sales || product.sales;
+    product.salesCategory = salesCategory || product.salesCategory;
+
+    if (Array.isArray(salesCategory)) {
+        product.salesCategory = salesCategory;
     }
     saveProducts(products);
     res.json(product);
@@ -81,8 +85,35 @@ app.put('/api/product/:id', (req, res) => {
 });
 
 app.get("/api/chart-data", (req, res) => {
-    const chartData = loadProducts().chartData;
+    const productData = loadProducts();
+    const products = productData.products || []; // Ensure products is an array
+
+    if (!Array.isArray(products)) {
+        return res.status(500).json({ error: "Products data is invalid" });
+    }
+
+    const chartData = {
+        months : ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        salesByCategory : {}
+    }
+
+    products.forEach(product => {
+        const category = product.salesCategory;
+        if(!chartData.salesByCategory[category]){
+            chartData.salesByCategory[category] = new Array(6).fill(0);
+        }
+        // Ensure sales is an array before mapping
+        const productSales = Array.isArray(product.sales) ? product.sales : [0, 0, 0, 0, 0, 0];
+
+
+        // Add product sales to its category
+        chartData.salesByCategory[category] = chartData.salesByCategory[category].map(
+            (value, index) => value + (productSales[index] || 0)
+        );
+    });
+
     res.json(chartData);
+
   });
 
 // start the server

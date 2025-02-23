@@ -6,6 +6,7 @@
       "description": "High-performance laptop for work and gaming",
       "price": 1200,
       "stock": 15,
+      "salesCategory": "laptop",
       "sales": [
         50,
         75,
@@ -21,6 +22,7 @@
       "description": "Latest smartphone with a high-resolution camera",
       "price": 800,
       "stock": 30,
+      "salesCategory": "smartphone",
       "sales": [
         80,
         85,
@@ -36,6 +38,7 @@
       "description": "Noise-canceling over-ear headphones",
       "price": 150,
       "stock": 50,
+      "salesCategory": "headphone",
       "sales": [
         40,
         55,
@@ -51,6 +54,7 @@
       "description": "Feature-rich smartwatch with health tracking",
       "price": 200,
       "stock": 20,
+      "salesCategory": "headphone",
       "sales": [
         30,
         40,
@@ -66,6 +70,7 @@
       "description": "Feature-rich smartwatch with health tracking 222",
       "price": 200,
       "stock": 20,
+      "salesCategory": "headphone",
       "sales": [
         30,
         0,
@@ -81,15 +86,38 @@
       "description": "As a specialist in home and building technology, IT GmbH has stood for individual software development",
       "price": 10,
       "stock": 10,
+      "salesCategory": "headphone",
       "sales": []
     },
     {
       "id": 7,
       "name": "Smartphone 3",
-      "description": "edqe fefe e geg4 4g",
+      "description": "eature-rich smartwatch with health tracking 222",
       "price": 10,
       "stock": 10,
+      "salesCategory": "headphone",
       "sales": []
+    },
+    {
+      "id": 8,
+      "name": "Test",
+      "description": "Test product",
+      "price": 99,
+      "stock": 10,
+      "salesCategory": "headphone",
+      "sales": [
+        5,
+        10
+      ]
+    },
+    {
+      "id": 9,
+      "name": "test ",
+      "description": "grew",
+      "price": 10,
+      "stock": 110,
+      "sales": 20,
+      "salesCategory": "tablet"
     }
   ]
 }
