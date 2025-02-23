@@ -20,8 +20,7 @@ This is a Node.js/Express API for a simple shop application. The API manages a c
 ## Installation
 
 -  Clone this repository:
-   ```bash
-- git clone https://github.com/Tannubhamra/Backend-shop.git
+-  git clone https://github.com/Tannubhamra/Backend-shop.git
 
 ##  Navigate to the project directory
 - cd Backend-shop
@@ -36,7 +35,7 @@ This is a Node.js/Express API for a simple shop application. The API manages a c
 The API will be available at http://localhost:3000
 
 ## API Endpoints
-- GET /api/products
+- **GET:** /api/products
 - Description: Retrieve a list of all products.
 - Response: JSON array of product objects.
 
