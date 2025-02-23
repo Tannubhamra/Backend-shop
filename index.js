@@ -98,13 +98,12 @@ app.get("/api/chart-data", (req, res) => {
     }
 
     products.forEach(product => {
-        const category = product.salesCategory;
+        const category = product.salesCategory || "Unknown Category";
         if(!chartData.salesByCategory[category]){
             chartData.salesByCategory[category] = new Array(6).fill(0);
         }
         // Ensure sales is an array before mapping
         const productSales = Array.isArray(product.sales) ? product.sales : [0, 0, 0, 0, 0, 0];
-
 
         // Add product sales to its category
         chartData.salesByCategory[category] = chartData.salesByCategory[category].map(
