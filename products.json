@@ -8,12 +8,7 @@
       "stock": 15,
       "salesCategory": "laptop",
       "sales": [
-        50,
-        75,
-        90,
-        100,
-        120,
-        130
+        12
       ]
     },
     {
@@ -24,12 +19,7 @@
       "stock": 30,
       "salesCategory": "smartphone",
       "sales": [
-        80,
-        85,
-        95,
-        105,
-        110,
-        125
+        30
       ]
     },
     {
@@ -40,12 +30,7 @@
       "stock": 50,
       "salesCategory": "headphone",
       "sales": [
-        40,
-        55,
-        60,
-        70,
-        85,
-        95
+        40
       ]
     },
     {
@@ -56,12 +41,7 @@
       "stock": 20,
       "salesCategory": "headphone",
       "sales": [
-        30,
-        40,
-        50,
-        65,
-        70,
-        80
+        10
       ]
     },
     {
@@ -72,12 +52,7 @@
       "stock": 20,
       "salesCategory": "headphone",
       "sales": [
-        30,
-        0,
-        50,
-        65,
-        75,
-        87
+        20
       ]
     },
     {
@@ -87,7 +62,9 @@
       "price": 10,
       "stock": 10,
       "salesCategory": "headphone",
-      "sales": []
+      "sales": [
+        10
+      ]
     },
     {
       "id": 7,
@@ -96,7 +73,9 @@
       "price": 10,
       "stock": 10,
       "salesCategory": "headphone",
-      "sales": []
+      "sales": [
+        10
+      ]
     },
     {
       "id": 8,
@@ -106,8 +85,7 @@
       "stock": 10,
       "salesCategory": "headphone",
       "sales": [
-        5,
-        10
+        11
       ]
     },
     {
@@ -116,8 +94,10 @@
       "description": "demo demo",
       "price": 10,
       "stock": 110,
-      "sales": 20,
-      "salesCategory": []
+      "sales": [
+        20
+      ],
+      "salesCategory": "headphone"
     },
     {
       "id": 10,
@@ -125,7 +105,14 @@
       "description": "fewfe",
       "price": 110,
       "stock": 2323,
-      "sales": 3230,
+      "sales": [
+        40,
+        3,
+        50,
+        70,
+        40,
+        40
+      ],
       "salesCategory": "headphone"
     },
     {
@@ -134,7 +121,12 @@
       "description": "rwgwr",
       "price": 230,
       "stock": 23,
-      "sales": 3420,
+      "sales": [
+        2,
+        4,
+        5,
+        6
+      ],
       "salesCategory": "smartphone"
     },
     {
@@ -143,7 +135,9 @@
       "description": "gwg",
       "price": 10,
       "stock": 10,
-      "sales": 10,
+      "sales": [
+        10
+      ],
       "salesCategory": "laptop"
     },
     {
@@ -152,7 +146,9 @@
       "description": "test test",
       "price": 10,
       "stock": 330,
-      "sales": 10,
+      "sales": [
+        10
+      ],
       "salesCategory": "tablet"
     },
     {
@@ -161,8 +157,31 @@
       "description": "wefwe",
       "price": 10,
       "stock": 10,
-      "sales": 0,
-      "salesCategory": []
+      "sales": [
+        0
+      ],
+      "salesCategory": "headphone"
+    },
+    {
+      "id": 15,
+      "name": "efwt2",
+      "description": "t245grv",
+      "price": 0,
+      "stock": 0,
+      "sales": [
+        10,
+        12
+      ],
+      "salesCategory": "smartphone"
+    },
+    {
+      "id": 16,
+      "name": "ertet",
+      "description": "3rt4",
+      "price": 2345,
+      "stock": 233,
+      "sales": 200,
+      "salesCategory": "smartphone"
     }
   ]
 }
