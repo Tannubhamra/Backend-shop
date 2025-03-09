@@ -2,20 +2,33 @@
 
 # Backend Shop API
 
-This is a Node.js/Express API for a simple shop application. The API manages a collection of products stored in a JSON file and provides endpoints for CRUD operations as well as generating chart data based on product sales.
+This is a simple **Node.js** and **Express.js** backend that provides a **JSON-based** API for managing products. The backend supports CRUD operations and generates sales data for visualization.
+
 
 ## Features
 
 - **CRUD Endpoints:** Create, Read, Update, and Delete products.
-- **Chart Data Endpoint:** Aggregate sales data by category for charting.
-- **File-Based Storage:** Products are stored in a JSON file (`products.json`).
 - **CORS Enabled:** Allows requests from different origins.
 - **JSON Parsing:** Automatically parses incoming JSON request bodies.
+- **JSON-based Storage**: Uses a `products.json` file for data persistence.
+- **CORS Enabled**: Allows cross-origin requests.
+- **Sales Data for Charts**: Aggregates product sales data for visualization.
+- **Lightweight and Fast**: No database required.
+
+
+## Technologies Used
+
+- **Node.js** - Server runtime
+- **Express.js** - Web framework
+- **CORS** - Cross-Origin Resource Sharing
+- **File System (fs)** - JSON file-based storage
 
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/) installed on your system.
+- [Nodemon](https://www.npmjs.com/package/nodemon) (optional for development)
 - npm (comes with Node.js).
+
 
 ## Installation
 
@@ -31,6 +44,57 @@ This is a Node.js/Express API for a simple shop application. The API manages a c
 ## Usage
 - Start the server: 
 - nodemon index.js or node index.js
+
+## API Endpoints
+
+### **Product Endpoints**
+
+| Method | Endpoint              | Description                 |
+|--------|-----------------------|-----------------------------|
+| GET    | `/api/products`       | Get all products           |
+| GET    | `/api/product/:id`    | Get a single product by ID |
+| POST   | `/api/product`        | Create a new product       |
+| PUT    | `/api/product/:id`    | Update an existing product |
+| DELETE | `/api/product/:id`    | Delete a product by ID     |
+
+#### Example Product Object:
+```json
+{
+  "id": 1,
+  "name": "Product A",
+  "description": "A sample product",
+  "price": 100,
+  "stock": 50,
+  "sales": [10, 15, 20, 25, 30, 35],
+  "salesCategory": "Electronics"
+}
+```
+
+### **Chart Data Endpoint**
+
+| Method | Endpoint             | Description                     |
+|--------|----------------------|---------------------------------|
+| GET    | `/api/chart-data`    | Get sales data for visualization |
+
+#### Example Chart Data Response:
+```json
+{
+  "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+  "salesByCategory": {
+    "Electronics": [10, 20, 30, 40, 50, 60],
+    "Clothing": [5, 15, 25, 35, 45, 55]
+  }
+}
+```
+
+## Project Structure
+```
+Backend-shop/
+│── products.json       # JSON file to store products
+│── index.js            # Main server file
+│── package.json        # Project dependencies and scripts
+```
+
 
 The API will be available at http://localhost:3000
 

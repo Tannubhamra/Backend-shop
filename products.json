@@ -6,7 +6,7 @@
       "description": "High-performance laptop for work and gaming",
       "price": 1200,
       "stock": 15,
-      "salesCategory": "laptop",
+      "salesCategory": "smartphone",
       "sales": [
         12
       ]
@@ -80,7 +80,7 @@
     {
       "id": 8,
       "name": "Test",
-      "description": "Test product",
+      "description": "As a specialist in home and building technology, IT",
       "price": 99,
       "stock": 10,
       "salesCategory": "headphone",
@@ -181,6 +181,24 @@
       "price": 2345,
       "stock": 233,
       "sales": 200,
+      "salesCategory": "smartphone"
+    },
+    {
+      "id": 17,
+      "name": "efeq",
+      "description": "eqfqe",
+      "price": 0,
+      "stock": 0,
+      "sales": 0,
+      "salesCategory": []
+    },
+    {
+      "id": 18,
+      "name": "test ",
+      "description": "some descriptionkjehfjlhefkqebfc egfqjkgefkqe fkqejgfjqehgf qfgheqjgf qefghjeq",
+      "price": 19,
+      "stock": 90,
+      "sales": 40,
       "salesCategory": "smartphone"
     }
   ]
